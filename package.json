@@ -1,0 +1,19 @@
+{
+  "name": "note-app",
+  "version": "1.0.0",
+  "description": "A basic node.js app to take and leave notes",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scotpfleghaar/NodeJsDevelopment.git"
+  },
+  "author": "Scot Pfleghaar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scotpfleghaar/NodeJsDevelopment/issues"
+  },
+  "homepage": "https://github.com/scotpfleghaar/NodeJsDevelopment#readme"
+}
