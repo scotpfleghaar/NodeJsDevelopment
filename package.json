@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/scotpfleghaar/NodeJsDevelopment/issues"
   },
-  "homepage": "https://github.com/scotpfleghaar/NodeJsDevelopment#readme"
+  "homepage": "https://github.com/scotpfleghaar/NodeJsDevelopment#readme",
+  "dependencies": {
+    "lodash": "^4.17.4"
+  }
 }
