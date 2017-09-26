@@ -3,22 +3,32 @@ console.log('Initilized app.js'); // Simply for learning to track how and when f
 //Dependencies
 const fs = require('fs'); // Getting the fs functions from node.js (const is used to avoid overwritting)
 const _ = require('lodash');
+const yargs = require('yargs');
 
 // My Files
 const notes = require('./notes.js');
 
-var command = process.argv[2];
-console.log(process.argv);
-console.log('Command: ', command);
+
+const argv = yargs.argv;
+
+var command = argv._[0];
+// console.log('Command: ', command);
+// console.log('Process', process.argv);
+console.log('yargs', argv);
 
 if (command === 'add') {
-    console.log('Adding New Note');
+    if (note === undefined) {
+        var note = notes.addNote(argv.title, argv.body);
+    } else {
+        console.log('Note already in use');
+    }
+
 } else if (command === 'list') {
-    console.log('Listing all notes');
+    notes.getAll();
 } else if (command === 'read') {
-    console.log('Reading note');
+    notes.getNote(argv.title);
 } else if (command === 'remove') {
-    console.log('Removing Note');
+    notes.removeNote(argv.title);
 } else {
     console.log('Command not recongized');
 }
